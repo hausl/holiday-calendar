@@ -1,0 +1,23 @@
+{
+    "name": "hausl/holiday-calendar",
+
+    "description": "Simple holiday calendar class for PHP",
+
+    "require": {
+        "php": ">=5.5"
+    },
+
+	"homepage": "https://github.com/hausl/holiday-calendar",
+
+	"support": {
+		"issues": "https://github.com/hausl/holiday-calendar/issues"
+	},
+
+	"license": "CC BY-SA 3.0",
+
+    "autoload": {
+        "files": [
+            "HolidayCalendar.php"
+        ]
+    }
+}
