@@ -3,9 +3,9 @@
 /*
  * HolidayCalendar
  *
- * Version 2017-04-13 alpha
+ * Version 2017-04-27 alpha
  *
- * Github: https://github.com/hausl/HolidayCalendar
+ * Github: https://github.com/hausl/holiday-calendar
  *
  * License: CC BY 3.0 https://creativecommons.org/licenses/by/3.0/
  *

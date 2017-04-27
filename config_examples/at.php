@@ -2,7 +2,7 @@
 
 /*
  * This file is part of the HolidayCalendar, see:
- * Github: https://github.com/hausl/HolidayCalendar
+ * Github: https://github.com/hausl/holiday-calendar
  *
 */
 

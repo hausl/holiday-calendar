@@ -1,11 +1,5 @@
 <?php
 
-/*
- * This file is part of the HolidayCalendar, see:
- * Github: https://github.com/hausl/HolidayCalendar
- *
-*/
-
 
 return [
 
