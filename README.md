@@ -369,7 +369,7 @@ Mother's Day: `'second sunday of may'`
 
 Fourth Advent Sunday: `'11/26, next Sunday, +3 weeks'`<br>
 The expressions are executed one after the other, seperated by komma.<br>
-The starting date is 01.01. Of the requested year.
+The starting date is 01.01. of the requested year.
 
 
 ### Date anchor

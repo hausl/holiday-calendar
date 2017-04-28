@@ -34,7 +34,7 @@ REGIONAL (6)
     15.08.  Mariä Himmelfahrt       BY SL
     31.10.  Reformationstag         BW BB MV SN ST TH
     01.11.  Allerheiligen           BW BY NW RP SL
-    16.11.  Buß- und Bettag         BY SN
+    16.11.  Buß- und Bettag         SN
 
 
 REGIONEN (16)
@@ -158,8 +158,8 @@ return [
 
         [
             'names'  => ['de' => 'Buß- und Bettag'],
-            'date'   => '11-16',
-            'filter' => ['BY', 'SN']
+            'date'   => '11/23, last Wed',
+            'filter' => ['SN']
         ]
     ]
 
