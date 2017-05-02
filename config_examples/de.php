@@ -151,6 +151,13 @@ return [
         ],
 
         [
+            // https://de.wikipedia.org/wiki/Reformationstag#Deutschland
+            'names'  => ['de' => 'Reformationstag 2017'],
+            'date'   => '2017-10-31',
+            'filter' => ['BY','BE','HB','HH','HE','NI','NW','RP','SL','SH']
+        ],
+
+        [
             'names'  => ['de' => 'Allerheiligen'],
             'date'   => '11-01',
             'filter' => ['BW', 'BY', 'NW', 'RP', 'SL']
