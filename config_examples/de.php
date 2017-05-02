@@ -34,7 +34,8 @@ REGIONAL (6)
     15.08.  Mariä Himmelfahrt       BY SL
     31.10.  Reformationstag         BW BB MV SN ST TH
     01.11.  Allerheiligen           BW BY NW RP SL
-    16.11.  Buß- und Bettag         SN
+    Var.    Buß- und Bettag         SN
+    Am Mittwoch vor dem 23. November https://de.wikipedia.org/wiki/Bu%C3%9F-_und_Bettag
 
 
 REGIONEN (16)
