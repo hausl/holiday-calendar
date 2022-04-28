@@ -27,6 +27,7 @@ $tpl = '<h3>%s</h3>';
 $configPath     = __DIR__.'/../config_examples/';
 $testconfigPath = __DIR__.'/';
 
+$currentYear = (new DateTime())->format('Y');
 
 // -----------------------------------------------------------------------------
 // Instaniciation
@@ -114,7 +115,7 @@ check( count($holiday->findHolidayByName('foo', 2017)), 0, __LINE__ );
 
 $holiday = new HolidayCalendar('test_config_2.php', $testconfigPath);
 $holiday->setLang('en');
-check( count($holiday->findHolidayByName('test', 2017)), 2, __LINE__ );
+check( count($holiday->findHolidayByName('test', $currentYear)), 2, __LINE__ );
 
 
 
@@ -174,7 +175,7 @@ check( count($holiday->findHolidayByDate($dt)), 1, __LINE__ );
 printf($tpl, 'createHolidaysList()');
 
 $holiday = new HolidayCalendar('de.php', $configPath);
-$aHolidayList = $holiday->createHolidaysList(2017);
+$aHolidayList = $holiday->createHolidaysList($currentYear);
 check( count($aHolidayList), 15, __LINE__ );
 
 $holiday = new HolidayCalendar('test_config_1.php', $testconfigPath);
@@ -198,23 +199,6 @@ $jsonSaved = <<<JSON
 JSON;
 
 check( $jsonNeu, $jsonSaved,  __LINE__ );
-
-
-// -----------------------------------------------------------------------------
-// createHolidaysList() - Dates "various.php" Config
-// -----------------------------------------------------------------------------
-printf($tpl, 'createHolidaysList() - Dates "various.php" config');
-
-$holiday = new HolidayCalendar('various.php', $configPath);
-$aHolidayList = $holiday->createHolidaysList(2017);
-$jsonNeu = json_encode($aHolidayList, JSON_UNESCAPED_UNICODE);
-
-$jsonSaved = <<<JSON
-[{"date":"2017-03-26","name":"Beginn Sommerzeit","config":"various.php","filter":[]},{"date":"2017-04-16","name":"Ostersonntag","config":"various.php","filter":[]},{"date":"2017-05-14","name":"Muttertag","config":"various.php","filter":[]},{"date":"2017-10-29","name":"Ende Sommerzeit","config":"various.php","filter":[]},{"date":"2017-12-24","name":"4. Advent","config":"various.php","filter":[]}]
-JSON;
-
-check( $jsonNeu, $jsonSaved,  __LINE__ );
-
 
 
 // -----------------------------------------------------------------------------
